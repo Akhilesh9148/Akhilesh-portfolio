@@ -1,1 +1,122 @@
+/* ===== EDUCATION PAGE PREMIUM UI ===== */
+
+.page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* Education Timeline Card */
+.education-card {
+  background: rgba(30, 41, 59, 0.65);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 40px 45px;
+  max-width: 900px;
+  border: 1px solid rgba(20, 184, 166, 0.35);
+  box-shadow: 0 0 40px rgba(20, 184, 166, 0.25);
+  animation: floatUp 1.2s ease forwards;
+  position: relative;
+}
+
+/* Title */
+.education-card h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 30px;
+  color: var(--secondary);
+  letter-spacing: 1px;
+}
+
+/* Timeline */
+.education-item {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 25px;
+  border-left: 2px solid rgba(20, 184, 166, 0.5);
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+}
+
+.education-dot {
+  position: absolute;
+  left: -10px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background: var(--secondary);
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(20, 184, 166, 0.9);
+}
+
+.education-item h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+  color: #e5e7eb;
+}
+
+.education-year {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.education-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #e5e7eb;
+}
+
+/* Neon Border Glow */
+.education-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 22px;
+  background: linear-gradient(120deg, transparent, #14b8a6, transparent);
+  opacity: 0.4;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(40px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education-card {
+    padding: 30px 25px;
+    margin: 0 15px;
+  }
+
+  .education-card h2 {
+    font-size: 28px;
+  }
+
+  .education-item h3 {
+    font-size: 19px;
+  }
+
+  .education-desc {
+    font-size: 14px;
+  }
+}
 
