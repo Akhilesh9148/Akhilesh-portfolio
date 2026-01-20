@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skills | Akhilesh</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2>Akhilesh</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="internships.html">Internship</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="achievements.html">Certifications</a></li>
+    </ul>
+  </nav>
+
+  <section class="section">
+    <h2>Skills</h2>
+
+    <h3>Programming / Query Languages</h3>
+    <ul>
+      <li>Python</li>
+      <li>SQL</li>
+    </ul>
+
+    <h3>Libraries / Frameworks</h3>
+    <ul>
+      <li>NumPy</li>
+      <li>Pandas</li>
+      <li>Scikit-Learn</li>
+      <li>Matplotlib</li>
+      <li>PyTorch</li>
+      <li>TensorFlow</li>
+    </ul>
+
+    <h3>Databases</h3>
+    <ul>
+      <li>MySQL</li>
+      <li>Microsoft Excel (Advanced)</li>
+    </ul>
+
+    <h3>Data Analytics / Visualization Tools</h3>
+    <ul>
+      <li>Power BI</li>
+      <li>Tableau</li>
+      <li>Google Sheets</li>
+      <li>Jupyter Notebook</li>
+      <li>Excel Pivot</li>
+    </ul>
+
+    <h3>Data Analytics Skills</h3>
+    <ul>
+      <li>Data Cleaning</li>
+      <li>Data Wrangling</li>
+      <li>Exploratory Data Analysis (EDA)</li>
+      <li>Data Visualization</li>
+      <li>Business Insights</li>
+      <li>Forecasting</li>
+      <li>Statistical Analysis</li>
+      <li>Hypothesis Testing</li>
+    </ul>
+
+    <h3>Soft Skills</h3>
+    <ul>
+      <li>Problem-Solving</li>
+      <li>Teamwork</li>
+      <li>Communication</li>
+      <li>Time Management</li>
+      <li>Leadership</li>
+    </ul>
+  </section>
+
+</body>
+</html>
