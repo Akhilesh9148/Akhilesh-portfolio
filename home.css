@@ -3,7 +3,7 @@
 .hero-modern {
   position: relative;
   min-height: 90vh;
-  background: url("https://images.unsplash.com/photo-1534751516642-a1af1ef26a6b?auto=format&fit=crop&w=1600&q=80") no-repeat center/cover;
+  background: url("background.png") no-repeat center/cover;
   overflow: hidden;
 }
 
