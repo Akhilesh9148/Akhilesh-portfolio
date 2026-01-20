@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Certifications | Akhilesh</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2>Akhilesh</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="internships.html">Internship</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="achievements.html">Certifications</a></li>
+    </ul>
+  </nav>
+
+  <section class="section">
+    <h2>Certifications</h2>
+
+    <ul>
+      <li>Google Cloud – Prepare Data for ML APIs on Google Cloud (2025)</li>
+      <li>Google Cloud – Store, Process, and Manage Data on Google Cloud – Command Line (2025)</li>
+      <li>IBM Skills Build – Artificial Intelligence Fundamentals Guided Learning with Capstone (2025)</li>
+      <li>IBM Skills Build – AI Skills Accelerator (2025)</li>
+      <li>ExcelR – Certified Data Science (2025)</li>
+      <li>Udemy – The Complete Python Pro Bootcamp (2025)</li>
+    </ul>
+  </section>
+
+</body>
+</html>
