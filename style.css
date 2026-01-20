@@ -183,10 +183,22 @@ ul {
 
 .page-hero {
   position: relative;
-  min-height: 90vh;
+  min-height: calc(100vh - 18vh);  /* 🔥 Leaves room for footer */
   background: url("background.png") no-repeat center/cover;
   overflow: hidden;
 }
+/* Smooth transition to footer */
+.page-hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(15,23,42,0.8));
+  z-index: 2;
+}
+
 
 .page-content {
   position: relative;
@@ -211,40 +223,43 @@ ul {
 
 /* ===== MINIMAL FOOTER (CENTERED & TALL) ===== */
 
+/* ===== MINIMAL FOOTER (FINAL PROFESSIONAL) ===== */
+
 .footer-minimal {
-  background: rgba(15, 118, 110, 0.25);
+  background: linear-gradient(120deg, #0f172a, #0f766e);
   backdrop-filter: blur(12px);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(20, 184, 166, 0.25);
 
-  height: 18vh;                 /* 🔥 15–20vh range */
-  min-height: 120px;            /* Safety for small screens */
+  height: 18vh;
+  min-height: 130px;
 
-  display: flex;                /* 🔥 Center vertically */
+  display: flex;
   flex-direction: column;
-  justify-content: center;      /* 🔥 Vertical center */
-  align-items: center;          /* 🔥 Horizontal center */
+  justify-content: center;
+  align-items: center;
 
   text-align: center;
 }
 
 .footer-name {
-  font-size: 20px;              /* Bigger, more premium */
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 700;
   color: var(--secondary);
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
 }
 
 .footer-copy {
-  margin-top: 8px;
+  margin-top: 10px;
   font-size: 14px;
-  color: #94a3b8;
+  color: #cbd5e1;
+  opacity: 0.85;
 }
 
 /* Responsive Footer */
 @media (max-width: 768px) {
   .footer-minimal {
-    height: 15vh;               /* Slightly smaller on mobile */
-    min-height: 100px;
+    height: 15vh;
+    min-height: 110px;
   }
 
   .footer-name {
@@ -255,4 +270,3 @@ ul {
     font-size: 12px;
   }
 }
-
