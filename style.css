@@ -178,4 +178,33 @@ ul {
   .section {
     margin: 20px;
     padding: 22
+  }
+  /* ===== COMMON PAGE BACKGROUND ===== */
+
+.page-hero {
+  position: relative;
+  min-height: 90vh;
+  background: url("background.png") no-repeat center/cover;
+  overflow: hidden;
+}
+
+.page-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(15,23,42,0.92), rgba(15,118,110,0.85));
+  z-index: 1;
+}
+
+.page-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 80px;
+}
+
+@media (max-width: 900px) {
+  .page-content {
+    padding: 40px 20px;
+  }
+}
+
 
