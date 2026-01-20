@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects | Akhilesh</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2>Akhilesh</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="internships.html">Internship</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="achievements.html">Certifications</a></li>
+    </ul>
+  </nav>
+
+  <section class="section">
+    <h2>Projects</h2>
+
+    <h3>Stock Market Analysis</h3>
+    <p>
+      Conducted EDA, data preprocessing, and feature engineering on financial time-series data.
+      Evaluated ARIMA, SARIMA, XGBoost, and Random Forest models; SARIMA delivered the best performance.
+      Deployed the SARIMA model on Streamlit with 15% improved accuracy and interactive forecasting.
+    </p>
+
+    <h3>Recommendation System</h3>
+    <p>
+      Built an online course recommendation system for personalized learning.
+      Uses user behavior, course metadata, and engagement data to generate recommendations.
+      Supports collaborative, content-based, and hybrid recommendation approaches.
+    </p>
+  </section>
+
+</body>
+</html>
