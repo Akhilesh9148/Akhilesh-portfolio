@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Akhilesh Girijannavar | Data Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2>Akhilesh</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="internships.html">Internship</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="achievements.html">Certifications</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <img src="profile.jpg" class="profile-pic" />
+    <h1>Akhilesh Girijannavar</h1>
+    <h3>Data Science & Data Analyst</h3>
+    <p>
+      Motivated Data Science and Data Analytics professional seeking opportunities
+      to apply analytical, problem-solving, and data interpretation skills.
+    </p>
+
+    <div class="links">
+      <a href="https://github.com/Akhilesh9148" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/akhilesh-girijannavar-507ba125b/" target="_blank">LinkedIn</a>
+      <a href="resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+  </section>
+
+</body>
+</html>
