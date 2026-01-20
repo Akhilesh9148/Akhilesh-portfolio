@@ -214,11 +214,15 @@ ul {
 /* ===== MINIMAL FOOTER ===== */
 
 .footer-minimal {
+  height: 20vh;
   background: rgba(15, 118, 110, 0.25);
   backdrop-filter: blur(10px);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 25px 15px 18px;
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
   text-align: center;
 }
 
@@ -245,3 +249,4 @@ ul {
     font-size: 12px;
   }
 }
+
