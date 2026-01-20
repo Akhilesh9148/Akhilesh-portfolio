@@ -1,15 +1,105 @@
-.section {
-  animation: slideLeft 1s ease-in-out;
+/* ===== ABOUT PAGE PREMIUM UI ===== */
+
+.page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  animation: fadeIn 1.2s ease forwards;
 }
 
-@keyframes slideLeft {
+/* Glass Card */
+.about-card {
+  background: rgba(30, 41, 59, 0.65);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 40px 50px;
+  max-width: 720px;
+  text-align: center;
+  border: 1px solid rgba(20, 184, 166, 0.35);
+  box-shadow: 0 0 40px rgba(20, 184, 166, 0.25);
+  animation: floatUp 1.2s ease forwards;
+}
+
+/* Title */
+.about-card h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: var(--secondary);
+  letter-spacing: 1px;
+  animation: glowText 2s ease-in-out infinite alternate;
+}
+
+/* Text */
+.about-card p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #e5e7eb;
+  margin-bottom: 18px;
+  animation: fadeText 1.6s ease forwards;
+}
+
+/* Subtle Border Glow */
+.about-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 22px;
+  background: linear-gradient(120deg, transparent, #14b8a6, transparent);
+  opacity: 0.5;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(40px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeText {
   from {
     opacity: 0;
-    transform: translateX(-40px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 10px rgba(20, 184, 166, 0.4);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(20, 184, 166, 0.9);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-card {
+    padding: 30px 25px;
+    margin: 0 15px;
+  }
+
+  .about-card h2 {
+    font-size: 28px;
+  }
+
+  .about-card p {
+    font-size: 15px;
+  }
+}
