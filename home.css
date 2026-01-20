@@ -1,30 +1,126 @@
-.hero {
-  animation: heroFade 1.2s ease-in-out;
+.glass {
+  background: rgba(15, 118, 110, 0.35);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-@keyframes heroFade {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar .active {
+  color: var(--secondary);
+}
+
+.hero-modern {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 60px 80px;
+  background: radial-gradient(circle at right, #14b8a640 0%, transparent 40%),
+              radial-gradient(circle at left, #0f766e30 0%, transparent 45%);
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  margin: 0;
+}
+
+.hero-text h1 span {
+  color: var(--secondary);
+}
+
+.hero-text h2 {
+  font-size: 28px;
+  margin: 10px 0;
+  color: #cbd5e1;
+}
+
+.hero-text p {
+  max-width: 500px;
+  line-height: 1.7;
+  margin: 20px 0 30px;
+  color: #e5e7eb;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary {
+  background: var(--secondary);
+  color: black;
+  padding: 14px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: #22c1b8;
+}
+
+.btn-secondary {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  padding: 12px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-secondary:hover {
+  background: var(--secondary);
+  color: black;
+}
+
+.hero-social {
+  margin-top: 25px;
+}
+
+.hero-social a {
+  margin-right: 15px;
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  animation: float 3.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+  .hero-modern {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 40px 20px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 240px;
+    margin-top: 30px;
   }
 }
 
-.profile-pic {
-  animation: zoomIn 1s ease-in-out;
-}
-
-@keyframes zoomIn {
-  from {
-    transform: scale(0.7);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 
