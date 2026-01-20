@@ -46,11 +46,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  
 }
 
 .skill-tags span {
   background: rgba(20, 184, 166, 0.15);
-  color: var(--secondary);
+  color: white;
   padding: 8px 14px;
   border-radius: 20px;
   font-size: 14px;
