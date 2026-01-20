@@ -96,13 +96,10 @@ ul {
   line-height: 1.8;
 }
 
-
-
 /* ========================= */
 /* RESPONSIVE DESIGN */
 /* ========================= */
 
-/* Mobile Devices (max-width: 600px) */
 @media (max-width: 600px) {
 
   .navbar {
@@ -149,10 +146,8 @@ ul {
     display: block;
     margin: 8px auto;
   }
-
 }
 
-/* Tablet Devices (601px to 900px) */
 @media (min-width: 601px) and (max-width: 900px) {
 
   .navbar {
@@ -177,9 +172,11 @@ ul {
 
   .section {
     margin: 20px;
-    padding: 22
+    padding: 22px;   /* FIXED */
   }
-  /* ===== COMMON PAGE BACKGROUND ===== */
+}
+
+/* ===== COMMON PAGE BACKGROUND ===== */
 
 .page-hero {
   position: relative;
@@ -206,5 +203,3 @@ ul {
     padding: 40px 20px;
   }
 }
-
-
