@@ -1,1 +1,103 @@
+/* ===== CERTIFICATIONS PAGE PREMIUM UI ===== */
+
+.page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* Certifications Grid */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+}
+
+/* Certification Card */
+.cert-card {
+  background: rgba(30, 41, 59, 0.65);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 28px 32px;
+  border: 1px solid rgba(20, 184, 166, 0.35);
+  box-shadow: 0 0 35px rgba(20, 184, 166, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: floatUp 1.2s ease forwards;
+  position: relative;
+}
+
+/* Hover Effect */
+.cert-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 60px rgba(20, 184, 166, 0.6);
+}
+
+/* Title */
+.cert-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--secondary);
+}
+
+/* Issuer */
+.cert-issuer {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Year */
+.cert-year {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 12px;
+}
+
+/* Description */
+.cert-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #e5e7eb;
+}
+
+/* Neon Border Glow */
+.cert-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 22px;
+  background: linear-gradient(120deg, transparent, #14b8a6, transparent);
+  opacity: 0.4;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(40px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+}
 
