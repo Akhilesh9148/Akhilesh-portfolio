@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <title>Projects | Akhilesh</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="projects.css" />
+
 </head>
 <body>
 
@@ -22,42 +24,63 @@
 
   <section class="page-hero">
   <div class="page-overlay"></div>
+
   <div class="page-content">
-    <h2>Projects</h2>
+    <div class="projects-grid">
 
-    <h3>Stock Market Analysis</h3>
-    <p>
-      <ul type="square">
-     <li>Conducted EDA, data preprocessing, and feature engineering on financial time-series data.</li>
-     <li> Evaluated ARIMA, SARIMA, XGBoost, and Random Forest models; SARIMA delivered the best performance.</li>
-     <li> Deployed the SARIMA model on Streamlit with 15% improved accuracy and interactive forecasting.</li>
-        </ul>
-    </p>
+      <div class="project-card">
+        <h3>Stock Market Analysis</h3>
+        <p>
+          Conducted EDA, preprocessing, and feature engineering on financial time-series data.
+          Evaluated ARIMA, SARIMA, XGBoost, and Random Forest models; SARIMA delivered the best performance.
+          Deployed the SARIMA model on Streamlit with 15% improved accuracy and interactive forecasting.
+        </p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>SARIMA</span>
+          <span>XGBoost</span>
+          <span>Streamlit</span>
+        </div>
+      </div>
 
-    <h3>Recommendation System</h3>
-    <p>
-      <ul type="square">
-      <li>Built an online course recommendation system for personalized learning.</li>
-      <li>Uses user behavior, course metadata, and engagement data to generate recommendations.</li>
-      <li>Supports collaborative, content-based, and hybrid recommendation approaches.</li>
-        </ul>
-    </p>
+      <div class="project-card">
+        <h3>Recommendation System</h3>
+        <p>
+          Built an online course recommendation system for personalized learning.
+          Uses user behavior, course metadata, and engagement data to generate recommendations.
+          Supports collaborative, content-based, and hybrid recommendation approaches.
+        </p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Scikit-learn</span>
+          <span>ML</span>
+          <span>NLP</span>
+        </div>
+      </div>
 
-    <h3>Restaurant Order Analysis – MySQL</h3>
-  </p>
-     <ul type="square">
-      <li>Analyzed restaurant order data using MySQL to identify customer behavior, top-selling items, and low-performing cuisines.</li>
-      <li>Built complex SQL queries (JOINs, GROUP BY, subqueries) to aggregate sales, order volume, and revenue metrics.</li>  
-      <li>Generated actionable insights to support menu optimization and improve business decision-making.</li>  
-      <li>Demonstrated strong skills in SQL, data analysis, data aggregation, and reporting.</li>
-        </ul>
-    </p>
-    
+      <div class="project-card">
+        <h3>Restaurant Order Analysis – MySQL</h3>
+        <p>
+          Analyzed restaurant order data using MySQL to identify customer behavior, top-selling items,
+          and low-performing cuisines. Built complex SQL queries (JOINs, GROUP BY, subqueries) to aggregate
+          sales, order volume, and revenue metrics. Generated actionable insights to support menu optimization
+          and improve business decision-making.
+        </p>
+        <div class="project-tags">
+          <span>MySQL</span>
+          <span>SQL</span>
+          <span>Data Analysis</span>
+          <span>Reporting</span>
+        </div>
+      </div>
+
     </div>
+  </div>
+
 </section>
 
-</body>
-</html>
+
 
 
 
