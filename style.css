@@ -103,6 +103,10 @@ ul {
 /* MOBILE HERO FIX (PRO) */
 /* ============================= */
 
+/* ============================= */
+/* FINAL MOBILE HERO FIX (TRUE MOBILE) */
+/* ============================= */
+
 @media (max-width: 600px) {
 
   body {
@@ -111,102 +115,120 @@ ul {
 
   /* Navbar */
   .navbar {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 12px;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 10px 12px !important;
   }
 
   .navbar h2 {
-    font-size: 20px;
-    margin-bottom: 8px;
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
   }
 
   .navbar ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
   }
 
   .navbar a {
-    font-size: 13px;
+    font-size: 13px !important;
   }
 
-  /* Hero Section */
+  /* Hero Layout */
   .hero-modern {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 40px 16px 60px;
-    gap: 25px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 35px 16px 55px !important;
+    gap: 22px !important;
   }
 
+  /* Hero Text */
   .hero-text {
-    max-width: 100%;
+    max-width: 100% !important;
+    order: 2 !important;
   }
 
   .hero-text h1 {
-    font-size: 30px;
-    line-height: 1.2;
+    font-size: 28px !important;
+    line-height: 1.25 !important;
   }
 
   .hero-text h2 {
-    font-size: 20px;
+    font-size: 19px !important;
   }
 
   .hero-text p {
-    font-size: 15px;
-    line-height: 1.6;
-    margin: 12px 0 20px;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin: 12px 0 20px !important;
   }
 
   /* Buttons */
   .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
   }
 
   .hero-buttons .btn {
-    width: 85%;
-    text-align: center;
-    padding: 12px 0;
-    font-size: 15px;
+    width: 85% !important;
+    text-align: center !important;
+    padding: 12px 0 !important;
+    font-size: 15px !important;
   }
 
   /* Social Links */
   .hero-links {
-    justify-content: center;
-    margin-top: 15px;
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 14px !important;
   }
 
   /* Hero Image */
-  .hero-image img {
-    width: 220px;
-    height: auto;
-    border-radius: 18px;
+  .hero-image {
+    order: 1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
   }
 
-  /* Page Content Padding */
+  .hero-image img {
+    width: 210px !important;
+    height: auto !important;
+    border-radius: 18px !important;
+  }
+
+  /* Page Content */
   .page-content {
     padding: 25px 15px !important;
   }
 
   /* Footer */
   .footer-minimal {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
     height: auto !important;
-    min-height: 120px;
-    padding: 25px 10px;
+    min-height: 120px !important;
+    padding: 25px 10px !important;
   }
 
   .footer-name {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   .footer-copy {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
+
 
 
