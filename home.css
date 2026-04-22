@@ -1,11 +1,13 @@
-/* ===== PREMIUM HOME UI ===== */
+/* ===== HOME PAGE PREMIUM UI ===== */
 
+/* Hero Section */
 .hero-modern {
   position: relative;
   min-height: 90vh;
   overflow: hidden;
 }
 
+/* Overlay */
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -13,6 +15,7 @@
   z-index: 1;
 }
 
+/* Content Layout */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -23,19 +26,21 @@
   padding: 60px 80px;
 }
 
-/* Glass navbar */
+/* Glass Navbar Effect */
 .glass {
   background: rgba(15, 118, 110, 0.35);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
+/* Logo */
 .navbar .logo {
   font-size: 22px;
   font-weight: bold;
 }
 
-/* Hero text */
+/* ===== HERO TEXT ===== */
+
 .hero-text h1 {
   font-size: 52px;
   margin: 0;
@@ -61,7 +66,8 @@
   animation: fadeSlide 1.4s ease forwards;
 }
 
-/* Buttons */
+/* ===== BUTTONS ===== */
+
 .hero-buttons {
   display: flex;
   gap: 20px;
@@ -75,10 +81,12 @@
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
   background: #22c1b8;
+  box-shadow: 0 0 15px rgba(20, 184, 166, 0.6);
 }
 
 .btn-secondary {
@@ -88,14 +96,17 @@
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
   background: var(--secondary);
   color: black;
+  box-shadow: 0 0 15px rgba(20, 184, 166, 0.6);
 }
 
-/* Social */
+/* ===== SOCIAL LINKS ===== */
+
 .hero-social {
   margin-top: 25px;
   animation: fadeSlide 1.8s ease forwards;
@@ -106,9 +117,15 @@
   color: var(--secondary);
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-/* Image */
+.hero-social a:hover {
+  color: #22c1b8;
+}
+
+/* ===== IMAGE ===== */
+
 .hero-image {
   display: flex;
   justify-content: center;
@@ -122,7 +139,8 @@
   animation: float 4s ease-in-out infinite;
 }
 
-/* Animations */
+/* ===== ANIMATIONS ===== */
+
 @keyframes fadeSlide {
   from {
     opacity: 0;
@@ -151,7 +169,8 @@
   }
 }
 
-/* Responsive */
+/* ===== RESPONSIVE ===== */
+
 @media (max-width: 900px) {
   .hero-content {
     grid-template-columns: 1fr;
