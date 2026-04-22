@@ -5,96 +5,110 @@
   <title>Projects | Akhilesh</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="projects.css" />
-
 </head>
+
 <body>
 
-  <nav class="navbar">
-    <h2>Akhilesh</h2>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="internships.html">Internship</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="achievements.html">Certifications</a></li>
-    </ul>
-  </nav>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2>Akhilesh</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="internships.html">Internship</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="achievements.html">Certifications</a></li>
+  </ul>
+</nav>
 
-  <section class="page-hero">
+<!-- PROJECTS SECTION -->
+<section class="page-hero">
   <div class="page-overlay"></div>
 
   <div class="page-content">
-    <div class="projects-grid">
+    <div class="projects-card">
 
-      <div class="project-card">
-        <h3>Stock Market Analysis</h3>
+      <h2>Projects</h2>
+
+      <!-- PROJECT 1 -->
+      <div class="project-item">
+        <h3>🤖 AI Chatbot (LLM + RAG)</h3>
         <p>
-          Conducted EDA, preprocessing, and feature engineering on financial time-series data.
-          Evaluated ARIMA, SARIMA, XGBoost, and Random Forest models; SARIMA delivered the best performance.
-          Deployed the SARIMA model on Streamlit with 15% improved accuracy and interactive forecasting.
+          Developed an intelligent chatbot using Large Language Models and RAG architecture to provide context-aware responses. 
+          Integrated document retrieval system for accurate and dynamic answers using Flowise and OpenWebUI.
         </p>
-        <div class="project-tags">
-          <span>Python</span>
-          <span>Pandas</span>
-          <span>SARIMA</span>
-          <span>XGBoost</span>
-          <span>Streamlit</span>
-        </div>
+        <ul>
+          <li>Built using LLMs, RAG, Flowise</li>
+          <li>Handled real-time query responses</li>
+          <li>Improved answer relevance using retrieval techniques</li>
+        </ul>
       </div>
 
-      <div class="project-card">
-        <h3>Recommendation System</h3>
+      <!-- PROJECT 2 -->
+      <div class="project-item">
+        <h3>🚨 Fraud Detection System</h3>
         <p>
-          Built an online course recommendation system for personalized learning.
-          Uses user behavior, course metadata, and engagement data to generate recommendations.
-          Supports collaborative, content-based, and hybrid recommendation approaches.
+          Designed an AI-powered fraud detection system to identify suspicious transactions using machine learning techniques.
         </p>
-        <div class="project-tags">
-          <span>Python</span>
-          <span>Scikit-learn</span>
-          <span>ML</span>
-          <span>NLP</span>
-        </div>
+        <ul>
+          <li>Applied classification models for anomaly detection</li>
+          <li>Improved fraud detection accuracy</li>
+          <li>Integrated with API workflows for automation</li>
+        </ul>
       </div>
 
-      <div class="project-card">
-        <h3>Restaurant Order Analysis – MySQL</h3>
+      <!-- PROJECT 3 -->
+      <div class="project-item">
+        <h3>💬 Sentiment Analysis System</h3>
         <p>
-          Analyzed restaurant order data using MySQL to identify customer behavior, top-selling items,
-          and low-performing cuisines. Built complex SQL queries (JOINs, GROUP BY, subqueries) to aggregate
-          sales, order volume, and revenue metrics. Generated actionable insights to support menu optimization
-          and improve business decision-making.
+          Built a sentiment analysis system to classify customer opinions and extract insights from textual data.
         </p>
-        <div class="project-tags">
-          <span>MySQL</span>
-          <span>SQL</span>
-          <span>Data Analysis</span>
-          <span>Reporting</span>
-        </div>
+        <ul>
+          <li>Performed NLP preprocessing and analysis</li>
+          <li>Classified text into positive, negative, neutral</li>
+          <li>Used for business decision insights</li>
+        </ul>
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="project-item">
+        <h3>📈 Stock Market Forecasting (SARIMA)</h3>
+        <p>
+          Developed a time-series forecasting model using SARIMA to predict stock trends with improved accuracy.
+        </p>
+        <ul>
+          <li>Performed EDA and feature engineering</li>
+          <li>Achieved ~15% improved prediction accuracy</li>
+          <li>Deployed using Streamlit dashboard</li>
+        </ul>
+      </div>
+
+      <!-- PROJECT 5 -->
+      <div class="project-item">
+        <h3>🎯 Recommendation System</h3>
+        <p>
+          Created a recommendation engine for personalized course suggestions using user behavior and metadata.
+        </p>
+        <ul>
+          <li>Implemented collaborative & content-based filtering</li>
+          <li>Enhanced user engagement and personalization</li>
+          <li>Scalable recommendation logic</li>
+        </ul>
       </div>
 
     </div>
   </div>
-
 </section>
- <footer class="footer-minimal">
+
+<!-- FOOTER -->
+<footer class="footer-minimal">
   <div class="footer-name">Akhilesh Girijannavar</div>
   <div class="footer-copy">
     © 2026 Akhilesh Girijannavar. All rights reserved.
   </div>
 </footer>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
